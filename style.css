@@ -1,0 +1,248 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #2874f0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    flex: 0.6;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 92%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 2px 0 0 2px;
+    background-color: white;
+    color: #333;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #fb641b;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.time-display {
+    font-size: 28px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #333;
+}
+
+.search-bar.dark-mode input {
+    background-color: #333;
+    color: white;
+}
+
+.category-item.dark-mode, .product-item.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Additional styles for categories in dark mode */
+.categories.dark-mode {
+    background-color: #333; 
+    color: white; 
+}
+
+.categories.dark-mode h2 {
+    color: white; 
+}
+
+.category-item.dark-mode {
+    background-color: #444; 
+    border: 1px solid #555; 
+    color: white; 
+}
+
+.user-options button {
+    margin-left: 10px;
+    background-color: #fb641b;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: 534px;
+    margin-bottom: 20px;
+}
+
+/* Categories */
+.categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #2874f0;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 20px;
+}
+
+.featured-products h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.product-item p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-item span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fb641b;
+}
+
+/* Footer */
+footer {
+    background-color: #2874f0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-content div:hover {
+    text-decoration: underline;
+}
+
+.moon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.darkmode-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.darkmode-btn__overlay {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    transition: transform 0.3s;
+}
+
+.darkmode-state:checked + .darkmode-btn .darkmode-btn__overlay {
+    transform: translateX(12px);
+}
+
+.darkmode-state {
+    display: none;
+}

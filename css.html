@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">bMOMMY SMART</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>Search</button>
+        </div>
+        <!-- Time Display -->
+        <div id="time" class="time-display"></div>
+        <div class="moon">
+            <input type="checkbox" class="darkmode-state" id="darkmode-state">
+            <label class="darkmode-btn" for="darkmode-state" title="Toggle dark mode">
+                <div class="darkmode-btn__overlay"></div>
+            </label>
+        </div>
+        <div class="user-options">
+            <button>Login</button>
+            <button>Cart</button>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="https://imgs.search.brave.com/CLnMbu7lF1dUUua-5VKgDgb2DD6LIF_OiDFpO4iOoXg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly8tRFlaRUhMRmIt/U0lrM09rUmdObzhp/Rk1OSHc9LzEwOXgy/MTo3ODJ4Njk0L2Zp/dC1pbi81MDB4NTAw/Lzk5ZGVzaWducy1j/b250ZXN0cy1hdHRh/Y2htZW50cy8yMy8y/MzU0OS9hdHRhY2ht/ZW50XzIzNTQ5ODU4.jpeg" alt="Banner Image">
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categoriesSection" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">Electronics</div>
+            <div class="category-item">Fashion</div>
+            <div class="category-item">Home</div>
+            <div class="category-item">Appliances</div>
+            <div class="category-item">Beauty</div>
+            <div class="category-item">Books</div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://imgs.search.brave.com/ksEtGta6H6UhgysG5_dG_tguqtl2iMXV19yWiI23GYw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ncm91cC1ob3Vz/ZWhvbGQtYXBwbGlh/bmNlcy13aGl0ZS1i/YWNrZ3JvdW5kXzk1/NTgzNC03NzYyLmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="HOME Appliances">
+                <p>Product 1</p>
+                <span>₹199</span>
+            </div>
+            <div class="product-item">
+                <img src="https://imgs.search.brave.com/-XLeAvyMqKYL79fPKFsgG4m2PuecEw4TI9h_1dpZnVs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzYzLzI1LzEy/LzM2MF9GXzYzMjUx/MjU4X1hNeGR4UVdy/Uml2M2VZNFZhdFFZ/NWlEd1Y3bHJPaVBt/LmpwZw" alt="KITCHEN ITEMS">
+                <p>Product 2</p>
+                <span>₹299</span>
+            </div>
+            <div class="product-item">
+                <img src="https://imgs.search.brave.com/rlyNrhyogKgDKsDmFVW6hlwpweIq6JMJIVbB3pssgxw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG90aGVzXzE0NDYy/Ny0yNTIxNC5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw" alt="CLOTHES">
+                <p>Product 3</p>
+                <span>₹399</span>
+            </div>
+            <div class="product-item">
+                <img src="https://imgs.search.brave.com/GaaYvKJGVYMtGXoYK5tePDxSVwGUYC5C8zOn9FDjork/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/OTAzMjQyNS9waG90/by9zaG9wcGluZy1i/YWctZnVsbC1vZi1o/ZWFsdGh5LWZvb2Qt/b24tYmx1ZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ODU2/WHBxUmdxOEJqOU1y/MjhWekFkVy1pVHlI/RWpfZFcwMW02U1BQ/SHNPVT0" alt="GROCERY">
+                <p>Product 4</p>
+                <span>₹499</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div>About Us</div>
+            <div>Contact Us</div>
+            <div>Privacy Policy</div>
+            <div>Terms of Service</div>
+        </div>
+    </footer>
+
+    <!-- Embedded JavaScript -->
+    <script>
+        // JavaScript to display current time
+        setInterval(() => {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const currentTime = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = currentTime;
+        }, 1000);
+
+        // Dark Mode Toggle Script
+        const darkModeToggle = document.getElementById('darkmode-state');
+        const body = document.body;
+        const categoriesSection = document.getElementById('categoriesSection');
+
+        darkModeToggle.addEventListener('change', () => {
+        body.classList.toggle('dark-mode');
+        document.querySelectorAll('header, footer, .search-bar, .category-item, .product-item').forEach(el => {
+        el.classList.toggle('dark-mode');
+    });
+    categoriesSection.classList.toggle('dark-mode');
+});
+    </script>
+
+</body>
+</html>
